@@ -1,0 +1,185 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8" />
+    <meta lang="vi" />
+    <title>HoangHa</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css" />
+    <link rel="stylesheet" href="~/Content/style.css">
+</head>
+<body>
+    <div class="header">
+        <div class="top-bar">
+            <a href="https://hoanghapc.vn/" class="logo">
+                <img src="~/Content/img/logo.png" alt="Hoàng Hà PC">
+            </a>
+            <div class="search-box">
+                <input type="text" id="search-input" placeholder="Nhập từ khóa tìm kiếm" maxlength="50" />
+                <button id="search-button">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+            </div>
+
+            <div class="top-right">
+                <a href="@Url.Action("Hotline", "Home")" class="top-item">
+                    <i class="fa-solid fa-headset"></i>
+                    <span>Hotline<br />Mua Hàng</span>
+                </a>
+
+                <a href="#" class="top-item">
+                    <i class="fa-solid fa-store"></i>
+                    <span>Hệ Thống<br />Showroom</span>
+                </a>
+
+                <a href="#" class="top-item">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    <span class="cart-number" id="cart-number">0</span>
+                    <span>Giỏ <br />Hàng</span>
+                </a>
+
+                <a href="@Url.Action("Login", "Home")" class="login-button">
+                    <i class="fa-regular fa-user"></i>
+                    <span>Đăng <br />Nhập</span>
+                </a>
+            </div>
+        </div>
+
+        <div class="menu-bar">
+            <a href="#"><i class="fa-solid fa-screwdriver-wrench"></i> Xây Dựng Cấu Hình</a>
+            <a href="#"><i class="fa-solid fa-desktop"></i> PC Đồ Họa Tool</a>
+            <a href="#"><i class="fa-solid fa-tags"></i> Chương Trình Khuyến Mãi</a>
+            <a href="#"><i class="fa-regular fa-newspaper"></i> Tin Tức Công Nghệ</a>
+            <a href="#"><i class="fa-solid fa-shield-halved"></i> Bảo Hành Tận Nhà</a>
+            <a href="#"><i class="fa-regular fa-star"></i> Feedback</a>
+        </div>
+
+        <div class="main-container">
+            <aside class="sidebar">
+                <ul>
+                    <li>
+                        <a href="@Url.Action("PCGiaRe", "Home")">
+                            <span class="icon"><i class="fa-solid fa-desktop"></i></span>PC Giá Rẻ<span class="arrow">›</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="@Url.Action("CPU", "Home")">
+                            <span class="icon"><i class="fa-solid fa-microchip"></i></span> CPU - Bộ Vi Xử Lý <span class="arrow">›</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="@Url.Action("VGA", "Home")">
+                            <span class="icon"><i class="fa-solid fa-gamepad"></i></span> VGA - Card Màn Hình <span class="arrow">›</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="icon"><i class="fa-solid fa-screwdriver-wrench"></i></span> Linh Kiện Máy Tính <span class="arrow">›</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="icon"><i class="fa-solid fa-tv"></i></span> Màn Hình Máy Tính <span class="arrow">›</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="icon"><i class="fa-solid fa-fan"></i></span> Tản Nhiệt Cooling <span class="arrow">›</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="icon"><i class="fa-solid fa-computer-mouse"></i></span> Gaming Gear <span class="arrow">›</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="icon"><i class="fa-solid fa-wifi"></i></span> Thiết Bị Mạng <span class="arrow">›</span>
+                        </a>
+                    </li>
+                </ul>
+            </aside>
+            <main class="content">
+                <div class="banner-row-top">
+                    <div class="banner-main">
+                    </div>
+                    <div class="banner-side">
+                        <div class="banner-side-item banner-warranty">
+                        </div>
+                        <div class="banner-side-item banner-clean">
+                        </div>
+                    </div>
+                </div>
+                <div class="banner-row-bottom">
+                    <div class="banner-small banner-ai"></div>
+                    <div class="banner-small banner-graphic"></div>
+                    <div class="banner-small banner-render"></div>
+                </div>
+            </main>
+        </div>
+        <footer class="site-footer">
+            <div class="footer-inner">
+                <div class="footer-cols">
+                    <div>
+                        <h4>Về Công ty</h4>
+                        <a href="#">Về chúng tôi</a>
+                        <a href="#">Tuyển dụng</a>
+                        <a href="#">Hệ thống showroom</a>
+                        <a href="#">Tin tức</a>
+                    </div>
+                    <div>
+                        <h4>Hỗ trợ khách hàng</h4>
+                        <a href="#">Hướng dẫn mua hàng online</a>
+                        <a href="#">Hướng dẫn thanh toán</a>
+                        <a href="#">Hướng dẫn mua trả góp</a>
+                    </div>
+                    <div>
+                        <h4>Chính sách</h4>
+                        <a href="#">Chính sách bảo hành</a>
+                        <a href="#">Chính sách bảo mật</a>
+                        <a href="#">Chính sách vận chuyển, giao nhận</a>
+                    </div>
+                    <div>
+                        <h4>Cộng đồng</h4>
+                        <a href="#">Fanpage</a>
+                        <a href="#">TikTok</a>
+                        <a href="#">YouTube</a>
+                        <a href="#">Shopee</a>
+                    </div>
+                </div>
+
+                <div class="footer-email">
+                    <h4>Email liên hệ</h4>
+                    <div class="email-grid">
+                        <div class="email-card">
+                            <strong>Hợp tác truyền thông:</strong>
+                            <a href="mailto:media@example.vn">media@hoanghapc.vn</a>
+                        </div>
+                        <div class="email-card">
+                            <strong>Liên hệ báo giá:</strong>
+                            <a href="mailto:baogia@example.vn">kinhdoanh@hoanghapc.vn</a>
+                        </div>
+                        <div class="email-card">
+                            <strong>Hỗ trợ bảo hành:</strong>
+                            <a href="mailto:manhphunguyen2411@gmail.com">baohanh@hoanghapc.vn</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="footer-bottom">
+                    <p class="legal">
+                        <b>Công ty TNHH ABC</b><br>
+                        Giấy chứng nhận đăng ký kinh doanh số: 0123456789, do Sở Kế hoạch và Đầu tư cấp.
+                    </p>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
